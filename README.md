@@ -1,4 +1,4 @@
-# Veridical Techs — Animated Auth System
+# Animated Auth System
 
 A full-stack web application featuring animated login and signup forms with real, secure authentication. Built with React (frontend), Node.js/Express (backend), and MongoDB Atlas (cloud database).
 
@@ -77,6 +77,8 @@ Veridical_Techs/
 ├── backend/
 │   ├── server.js
 │   ├── userModel.js
+|   ├── routes.js
+|   ├── authController.js
 │   ├── .env
 │   └── ...
 ├── auth-client/
@@ -85,6 +87,10 @@ Veridical_Techs/
 │   │   ├── App.css
 │   │   └── ...
 │   └── ...
+├── images/
+|   ├── backend success.png
+|   ├── front page.png
+|   └── ...
 └── README.md
 ```
 
