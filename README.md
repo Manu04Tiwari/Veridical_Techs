@@ -59,7 +59,7 @@ cd ../auth-client
 npm install
 npm start
 ```
-
+<img src="https://github.com/Manu04Tiwari/Veridical_Techs/blob/main/images/front%20page.png" alt="Frontend Page" width="700"/>
 ---
 
 ## Usage
