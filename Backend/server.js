@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const User = require('./userModel');
-
+const mongoURI ='mongodb+srv://Manya:Manya%232004@veridical.iusx8a8.mongodb.net/?retryWrites=true&w=majority&appName=Veridical'
 const app = express();
 const JWT_SECRET = 'your_jwt_secret_here';
 
@@ -13,9 +13,10 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/auth_demo', {
-  useNewUrlParser: true, useUnifiedTopology: true
-});
+
+mongoose.connect(mongoURI)
+  .then(() => console.log('Connected to MongoDB Atlas!'))
+  .catch((err) => console.error('MongoDB connection error:', err));
 
 // Register
 app.post('/api/register', async (req, res) => {

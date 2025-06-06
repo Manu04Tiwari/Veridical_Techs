@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
+import './App.css';
 
 function App() {
   const [mode, setMode] = useState('login');
